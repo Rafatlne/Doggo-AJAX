@@ -53,6 +53,7 @@ function showDoggo(DOG_URL) {
       const img = document.createElement("img");
       img.src = processedResponse.message;
       img.alt = "Cute doggo";
+      img.className = "doggo-image"
       doggos.appendChild(img);
     })
     .catch(function (error) {
